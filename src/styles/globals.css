@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a:hover {
+  color: var(--bs-orange);
+}
+
+.wrapper {
+  margin-top: 62px;
+}
+
+.section-title {
+  color: var(--dark);
+  text-decoration: overline;
+  text-decoration-color: var(--bs-orange);
+}
+
+.navigation {
+  border-bottom: 1px solid #000;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(0, 0, 0);
+  background-color: #fff;
+  z-index: 700;
+}
+
+.nav-link {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.btn-layered {
+  background: none;
+  border: 2px solid var(--bs-orange);
+  font-family: CircularStd, sans-serif !important;
+  font-size: 10pt;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10px 26px;
+  transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+  color: var(--bs-orange);
+}
+
+.offset {
+  box-shadow: 0.4em 0.3em 0 0 var(--bs-orange);
+}
+
+.offset:focus,
+.offset:hover {
+  box-shadow: 0 0 0 0 var(--bs-orange);
+  color: var(--bs-orange);
+  text-decoration: none;
+}
+
+.landing-top {
+  height: 85vh;
+  min-height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.landing-block {
+  max-width: 600px;
+}
+
+.email-link,
+.download-link,
+.landing-block p {
+  font-weight: 500;
+}
+
+.email-link {
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--dark);
+  color: var(--dark);
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+}
+
+.email-link:hover {
+  text-decoration: none;
+  background-color: var(--bs-orange);
+  color: #fff;
+  border: none;
+}
+
+.download-link {
+  color: var(--dark);
+}
+
+.download-link:hover {
+  text-decoration: none;
+}
+
+.showcase {
+  margin-bottom: 96px;
+}
+
+.showcase-card {
+  width: 100%;
+  height: 425px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+}
+
+.showcase-image {
+  position: relative;
+  overflow: hidden;
+  max-height: 85%;
+}
+
+.image {
+  max-width: 70%;
+  height: auto;
+  margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  overflow: hidden;
+  -o-object-fit: contain;
+  object-fit: contain;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  height: 100%;
+  width: -webkit-calc(100% - 30px);
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background-color: var(--bs-orange);
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.image-overlay:hover {
+  opacity: 0.7;
+}
+
+.image-overlay-text {
+  color: #fff;
+  padding-top: 40px;
+  padding-left: 40px;
+  max-width: 60%;
+  line-height: 1;
+}
+
+.project-company {
+  position: relative;
+  font-size: 12pt;
+  font-weight: 500;
+  bottom: 3px;
+}
+
+.project-title {
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+.nav-overlay {
+  height: 100%;
+  display: none;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0.95;
+  background-color: var(--bs-orange);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 999999 !important;
+}
+
+.nav-overlay .nav-close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 24pt;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.nav-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--white);
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.skillset {
+  margin-bottom: 100px;
+}
+
+.logo-container {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.logo:hover {
+  filter: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-top {
+    height: 85vh;
+  }
+
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .logo {
+    filter: none;
+  }
+}
