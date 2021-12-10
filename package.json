@@ -5,9 +5,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --env=jsdom",
+    "test-watch": "jest --watchAll --env=jsdom",
+    "test-coverage": "jest --coverage --env=jsdom"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
     "next": "12.0.4",
     "react": "17.0.2",
@@ -15,10 +19,22 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.11.1",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "@types/node": "16.11.10",
     "@types/react": "17.0.37",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel-jest": "^27.3.1",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
+    "jest": "^27.3.1",
+    "jest-dom": "^4.0.0",
+    "node-mocks-http": "^1.11.0",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.0.7",
+    "ts-loader": "^9.2.6",
     "typescript": "4.5.2"
   }
 }
