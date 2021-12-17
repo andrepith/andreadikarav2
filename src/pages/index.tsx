@@ -1,12 +1,12 @@
-import axios from "axios";
 import type { GetStaticProps } from "next";
-import LandingTop from "../components/LandingTop";
+import bioApi from "@/lib/BioApi";
+import LandingTop from "@/components/LandingTop";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const bio = await axios.get("http://andreadikaraapi.herokuapp.com/");
+  const bio = await bioApi();
   return {
     props: {
-      bio: bio.data,
+      bio,
     },
   };
 };
