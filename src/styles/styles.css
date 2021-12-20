@@ -117,6 +117,7 @@ a:hover {
   cursor: pointer;
   border-radius: 8px;
   display: block;
+  position: relative;
 }
 
 .showcase-image {
@@ -143,10 +144,8 @@ a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 15px;
-  right: 0;
   height: 100%;
-  width: -webkit-calc(100% - 30px);
+  width: 100%;
   opacity: 0;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
