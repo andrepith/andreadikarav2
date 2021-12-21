@@ -41,6 +41,15 @@ a:hover {
   font-size: 1.25rem;
 }
 
+.primary-nav {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.primary-nav .navbar-collapse {
+  flex-grow: unset;
+}
+
 .btn-layered {
   background: none;
   border: 2px solid var(--bs-orange);
@@ -201,7 +210,7 @@ a:hover {
   top: 20px;
   right: 45px;
   font-size: 24pt;
-  color: var(--white);
+  color: var(--bs-white);
   cursor: pointer;
 }
 
@@ -217,7 +226,7 @@ a:hover {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: var(--white);
+  color: var(--bs-white);
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
