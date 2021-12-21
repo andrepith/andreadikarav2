@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface PortofolioInterfaceItem {
   url: string;
   image: string;
@@ -19,10 +21,11 @@ const Showcase = ({ portofolio }: ShowcaseInterface) => {
           {portofolio.map((item, key) => (
             <div key={key} className="col-lg-6 col-sm-12 mt-3">
               <a href={item.url} target="__blank" className="showcase-card">
-                <img
+                <Image
                   className="showcase-image image"
                   src={item.image}
                   alt={item.alt}
+                  layout="fill"
                 />
                 <div className="image-overlay">
                   <div className="image-overlay-text">

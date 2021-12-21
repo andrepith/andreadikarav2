@@ -121,7 +121,7 @@ a:hover {
 }
 
 .showcase-image {
-  position: relative;
+  position: relative !important;
   overflow: hidden;
   max-height: 85%;
 }
@@ -130,7 +130,7 @@ a:hover {
   max-width: 70%;
   height: auto;
   margin: auto;
-  top: 50%;
+  top: 50% !important;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: center;
