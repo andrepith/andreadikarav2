@@ -123,12 +123,15 @@ a:hover {
 .showcase-image {
   position: relative !important;
   overflow: hidden;
-  max-height: 85%;
+  max-height: 85% !important;
+  min-height: unset !important;
 }
 
 .image {
-  max-width: 70%;
-  height: auto;
+  min-width: unset !important;
+  max-width: 70% !important;
+  width: unset !important;
+  height: auto !important;
   margin: auto;
   top: 50% !important;
   -webkit-transform: translateY(-50%);
@@ -240,11 +243,19 @@ a:hover {
   text-align: center;
 }
 
+.logo-wrapper span {
+  position: static !important;
+}
+
 .logo {
-  max-width: 100px;
+  position: relative !important;
+  max-width: 100px !important;
+  max-height: unset !important;
   cursor: pointer;
   filter: grayscale(100%);
   transition: 0.3s;
+  width: auto !important;
+  height: auto !important;
 }
 
 .logo:hover {

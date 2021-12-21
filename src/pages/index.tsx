@@ -2,6 +2,7 @@ import type { GetStaticProps } from "next";
 import bioApi from "@/lib/BioApi";
 import LandingTop from "@/components/LandingTop";
 import Showcase from "@/components/Showcase";
+import Skillset from "@/components/Skillset";
 
 export const getStaticProps: GetStaticProps = async () => {
   const bio = await bioApi();
@@ -20,6 +21,7 @@ interface HomeProps {
     email: string;
     resumeLink: string;
     portofolio: Array<any>;
+    skillset: Array<any>;
   };
 }
 
@@ -34,6 +36,7 @@ const Home = ({ bio }: HomeProps) => {
         resumeLink={bio.resumeLink}
       />
       <Showcase portofolio={bio.portofolio} />
+      <Skillset skillset={bio.skillset} />
     </main>
   );
 };
