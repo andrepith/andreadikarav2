@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bs-gray-100);
 }
 
 code {
@@ -13,7 +14,7 @@ code {
 }
 
 a:hover {
-  color: var(--bs-orange) !important;
+  color: #e9820c;
 }
 
 .wrapper {
@@ -23,7 +24,7 @@ a:hover {
 .section-title {
   color: var(--dark);
   text-decoration: overline;
-  text-decoration-color: var(--bs-orange);
+  text-decoration-color: #e9820c;
 }
 
 .navigation {
@@ -41,6 +42,10 @@ a:hover {
   font-size: 1.25rem;
 }
 
+.nav-link:hover {
+  color: #e9820c;
+}
+
 .primary-nav {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -52,25 +57,25 @@ a:hover {
 
 .btn-layered {
   background: none;
-  border: 2px solid var(--bs-orange);
+  border: 2px solid #e9820c;
   font-family: CircularStd, sans-serif !important;
   font-size: 10pt;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 1;
   padding: 10px 26px;
   transition: 0.1s ease-out;
   -webkit-transition: 0.1s ease-out;
-  color: var(--bs-orange);
+  color: #e9820c;
 }
 
 .offset {
-  box-shadow: 0.4em 0.3em 0 0 var(--bs-orange);
+  box-shadow: 0.4em 0.3em 0 0 #e9820c;
 }
 
 .offset:focus,
 .offset:hover {
-  box-shadow: 0 0 0 0 var(--bs-orange);
-  color: var(--bs-orange);
+  box-shadow: 0 0 0 0 #e9820c;
+  color: #e9820c;
   text-decoration: none;
 }
 
@@ -102,7 +107,7 @@ a:hover {
 
 .email-link:hover {
   text-decoration: none;
-  background-color: var(--bs-orange);
+  background-color: #e9820c;
   color: #fff;
   border: none;
 }
@@ -161,7 +166,7 @@ a:hover {
   opacity: 0;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-  background-color: var(--bs-orange);
+  background-color: #e9820c;
   border-radius: 8px;
   z-index: 100;
 }
@@ -198,7 +203,7 @@ a:hover {
   left: 0;
   top: 0;
   opacity: 0.95;
-  background-color: var(--bs-orange);
+  background-color: #e9820c;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -226,7 +231,7 @@ a:hover {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: var(--bs-white);
+  color: var(--bs-white) !important;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
