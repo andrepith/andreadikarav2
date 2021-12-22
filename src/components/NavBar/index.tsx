@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import { List } from "react-bootstrap-icons";
 import Overlay from "../Overlay";
 
@@ -31,13 +32,11 @@ const NavBar = ({
       />
       <div className="fixed-top navigation" id="navigation">
         <nav className="navbar navbar-expand-lg primary-nav container">
-          <a
-            aria-current="page"
-            className="nav-item nav-link pl-0 mr-4"
-            href="/"
-          >
-            {firstName} {lastName}
-          </a>
+          <Link href="/">
+            <a aria-current="page" className="nav-item nav-link pl-0 mr-4">
+              {firstName} {lastName}
+            </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

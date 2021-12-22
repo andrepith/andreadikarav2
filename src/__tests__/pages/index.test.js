@@ -1,8 +1,6 @@
 import axios from "axios";
-import { render, screen } from "@testing-library/react";
 import ShallowRenderer from "react-test-renderer/shallow";
-import Home, { getStaticProps } from "../index";
-import { JustifyLeft } from "react-bootstrap-icons";
+import Home from "../../pages/index";
 
 const props = {
   bio: {
