@@ -13,7 +13,7 @@ code {
 }
 
 a:hover {
-  color: var(--bs-orange);
+  color: var(--bs-orange) !important;
 }
 
 .wrapper {
