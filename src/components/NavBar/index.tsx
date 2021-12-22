@@ -38,7 +38,12 @@ const NavBar = ({
           >
             {firstName} {lastName}
           </a>
-          <button className="navbar-toggler" type="button" onClick={handleOpen}>
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={handleOpen}
+            aria-label="nav-mobile"
+          >
             <List size={24} />
           </button>
           <div className="collapse navbar-collapse" id="navbar">
