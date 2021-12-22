@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { List } from "react-bootstrap-icons";
-import Overlay from "@/components/Overlay";
+import Overlay from "../Overlay";
 
 interface NavBarInterface {
   firstName: string;

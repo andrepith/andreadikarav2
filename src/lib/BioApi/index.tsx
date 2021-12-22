@@ -1,5 +1,5 @@
 import axios from "axios";
-import staticData from "@/lib/StaticData";
+import staticData from "../StaticData";
 
 declare const process: {
   env: {

@@ -7,10 +7,19 @@ import { JustifyLeft } from "react-bootstrap-icons";
 const props = {
   bio: {
     firstName: "",
+    lastName: "",
     nationality: "",
     aboutMe: "",
     email: "",
+    github: {
+      url: "",
+    },
+    linkedin: {
+      url: "",
+    },
     resumeLink: "",
+    portofolio: [],
+    skillset: [],
   },
 };
 
