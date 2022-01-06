@@ -17,10 +17,6 @@ a:hover {
   color: #e9820c;
 }
 
-.wrapper {
-  margin-top: 62px;
-}
-
 .section-title {
   color: var(--dark);
   text-decoration: overline;
@@ -28,16 +24,17 @@ a:hover {
 }
 
 .navigation {
-  border-bottom: 1px solid #000;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(0, 0, 0);
-  background-color: #fff;
-  z-index: 700;
+  z-index: 1000;
+  position: fixed;
+  background: rgba(122, 97, 27, 0.178);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 2%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
 .nav-link {
-  color: var(--dark);
+  color: #fff;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -56,8 +53,7 @@ a:hover {
 }
 
 .btn-layered {
-  background: none;
-  border: 2px solid #e9820c;
+  background: #e9820c;
   font-family: CircularStd, sans-serif !important;
   font-size: 10pt;
   font-weight: 900;
@@ -65,10 +61,10 @@ a:hover {
   padding: 10px 26px;
   transition: 0.1s ease-out;
   -webkit-transition: 0.1s ease-out;
-  color: #e9820c;
+  color: #eee;
 }
 
-.offset {
+/* .offset {
   box-shadow: 0.4em 0.3em 0 0 #e9820c;
 }
 
@@ -77,13 +73,36 @@ a:hover {
   box-shadow: 0 0 0 0 #e9820c;
   color: #e9820c;
   text-decoration: none;
-}
+} */
 
 .landing-top {
-  height: 85vh;
+  background: linear-gradient(
+    90deg,
+    rgba(233, 130, 12, 1) 0%,
+    rgba(42, 157, 143, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: animateBg 10s ease infinite;
+  height: 100vh;
   min-height: 500px;
   width: 100%;
   margin: auto;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.landing-title {
+  color: #fff;
 }
 
 .landing-block {
@@ -94,12 +113,13 @@ a:hover {
 .download-link,
 .landing-block p {
   font-weight: 500;
+  color: #eee;
 }
 
 .email-link {
   padding-bottom: 3px;
   border-bottom: 1px solid var(--dark);
-  color: var(--dark);
+  color: #fff;
   text-decoration: none;
   transition: 0.2s ease-out;
   -webkit-transition: 0.2s ease-out;
@@ -113,7 +133,7 @@ a:hover {
 }
 
 .download-link {
-  color: var(--dark);
+  color: #fff;
 }
 
 .download-link:hover {
@@ -132,6 +152,14 @@ a:hover {
   border-radius: 8px;
   display: block;
   position: relative;
+  transition: 0.4s ease all;
+}
+
+.showcase-card:hover {
+  transform: perspective(800px) rotateY(-8deg) translateY(-20px) rotateX(10deg)
+    scale(1);
+  filter: blur(0);
+  opacity: 1;
 }
 
 .showcase-image {
@@ -291,10 +319,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  .landing-top {
-    height: 85vh;
-  }
-
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;

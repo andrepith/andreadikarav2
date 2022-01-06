@@ -26,7 +26,7 @@ const LandingTop = ({
           <p className="mt-4">{aboutMe}</p>
           <div className="d-flex mt-4">
             <div className="me-2">
-              <EnvelopeFill size={12} />
+              <EnvelopeFill size={12} color="white" />
             </div>
             <a className="email-link" href={`mailto:${email}`}>
               {email}
@@ -34,7 +34,7 @@ const LandingTop = ({
           </div>
           <div className="d-flex mt-2">
             <div className="me-2">
-              <FileArrowDownFill size={12} />
+              <FileArrowDownFill size={12} color="white" />
             </div>
             <a
               className="download-link d-block"
