@@ -6,9 +6,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --env=jsdom",
-    "test:watch": "jest --watchAll --env=jsdom",
-    "test:coverage": "jest --coverage --env=jsdom"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "test:update-snapshot": "jest --updateSnapshot"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -26,7 +27,10 @@
     "@types/node": "16.11.10",
     "@types/react": "17.0.37",
     "@types/react-test-renderer": "^17.0.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "babel-jest": "^27.3.1",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
     "jest": "^27.3.1",

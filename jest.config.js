@@ -8,4 +8,6 @@ module.exports = {
     "\\.(css|less|scss|sass)$": "<rootDir>/src/styles/__mocks__/styleMock.js",
     "^@components/(.*)$": "<rootDir>/src/components/$1",
   },
+  setupFiles: ["<rootDir>/enzyme.config.js"],
+  testEnvironment: "jsdom",
 };
