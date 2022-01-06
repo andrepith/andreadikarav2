@@ -43,7 +43,7 @@ const NavBar = ({
             onClick={handleOpen}
             aria-label="nav-mobile"
           >
-            <List size={24} />
+            <List size={24} color="white" />
           </button>
           <div className="collapse navbar-collapse" id="navbar">
             <div className="navbar-nav align-items-center ml-auto">

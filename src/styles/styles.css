@@ -33,6 +33,10 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .nav-link {
   color: #fff;
   font-weight: 700;
@@ -64,16 +68,11 @@ a:hover {
   color: #eee;
 }
 
-/* .offset {
-  box-shadow: 0.4em 0.3em 0 0 #e9820c;
-}
-
 .offset:focus,
 .offset:hover {
-  box-shadow: 0 0 0 0 #e9820c;
-  color: #e9820c;
+  color: #fff;
   text-decoration: none;
-} */
+}
 
 .landing-top {
   background: linear-gradient(
