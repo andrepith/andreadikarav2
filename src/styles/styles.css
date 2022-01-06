@@ -140,7 +140,7 @@ a:hover {
 }
 
 .showcase {
-  margin-bottom: 96px;
+  margin-top: 48px;
 }
 
 .showcase-card {
@@ -211,6 +211,19 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .showcase-cards {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .showcase-card {
+    border-radius: 0;
+  }
+
+  .showcase-card:hover {
+    transform: none;
+  }
+
   .image-overlay {
     background-color: transparent;
     opacity: 1;
@@ -280,7 +293,9 @@ a:hover {
 }
 
 .skillset {
-  margin-bottom: 100px;
+  margin-top: 48px;
+  padding-top: 48px;
+  background: #eee;
 }
 
 .logo-container {
@@ -318,6 +333,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .skillset {
+    background: none;
+    margin: 24px;
+    padding-top: 0;
+  }
+
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;

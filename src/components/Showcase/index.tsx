@@ -19,7 +19,7 @@ const Showcase = ({ portofolio }: ShowcaseInterface) => {
         <h2 className="section-title text-center">Showcase.</h2>
         <div className="row">
           {portofolio.map((item, key) => (
-            <div key={key} className="col-lg-6 col-sm-12 mt-3">
+            <div key={key} className="col-lg-6 col-sm-12 mt-3 showcase-cards">
               <a href={item.url} target="__blank" className="showcase-card">
                 <Image
                   className="showcase-image image"
