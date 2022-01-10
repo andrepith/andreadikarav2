@@ -13,8 +13,9 @@ code {
     monospace;
 }
 
-a:hover {
-  color: #e9820c;
+a:hover,
+.nav-link:hover {
+  color: #fff;
 }
 
 .section-title {
@@ -41,10 +42,6 @@ a:hover {
   color: #fff;
   font-weight: 700;
   font-size: 1.25rem;
-}
-
-.nav-link:hover {
-  color: #e9820c;
 }
 
 .primary-nav {
@@ -86,6 +83,11 @@ a:hover {
   min-height: 500px;
   width: 100%;
   margin: auto;
+  display: grid;
+  grid-template-areas:
+    "head"
+    "body"
+    "foot";
 }
 
 @keyframes animateBg {
@@ -100,12 +102,46 @@ a:hover {
   }
 }
 
+.landing-top__text {
+  grid-area: body;
+  align-self: center;
+}
+
+.landing-top__foot {
+  grid-area: foot;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transform: scale(1);
+  animation: pulse-black 2s infinite;
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
 .landing-title {
   color: #fff;
+  font-size: 3rem;
 }
 
 .landing-block {
-  max-width: 600px;
+  max-width: 640px;
 }
 
 .email-link,
@@ -113,6 +149,7 @@ a:hover {
 .landing-block p {
   font-weight: 500;
   color: #eee;
+  font-size: 20px;
 }
 
 .email-link {
@@ -133,10 +170,6 @@ a:hover {
 
 .download-link {
   color: #fff;
-}
-
-.download-link:hover {
-  text-decoration: none;
 }
 
 .showcase {
