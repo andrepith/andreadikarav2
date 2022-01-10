@@ -152,6 +152,18 @@ a:hover,
   font-size: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .landing-title {
+    font-size: 30px;
+  }
+}
+
+.email-link,
+.download-link,
+.landing-block p {
+  font-size: 16px;
+}
+
 .email-link {
   padding-bottom: 3px;
   border-bottom: 1px solid var(--dark);
