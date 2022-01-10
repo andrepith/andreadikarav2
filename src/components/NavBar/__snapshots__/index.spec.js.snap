@@ -68,7 +68,7 @@ Array [
         type="button"
       >
         <svg
-          fill="currentColor"
+          fill="white"
           height={24}
           viewBox="0 0 16 16"
           width={24}

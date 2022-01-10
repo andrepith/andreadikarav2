@@ -1,3 +1,4 @@
+import React from "react";
 import {
   EnvelopeFill,
   FileArrowDownFill,
@@ -10,6 +11,7 @@ interface LandingTopProps {
   aboutMe: string;
   email: string;
   resumeLink: string;
+  scrollToBottom: () => void;
 }
 
 const LandingTop = ({
@@ -18,6 +20,7 @@ const LandingTop = ({
   aboutMe,
   email,
   resumeLink,
+  scrollToBottom,
 }: LandingTopProps) => {
   return (
     <div className="landing-top position-relative" id="landing-top">
@@ -50,7 +53,7 @@ const LandingTop = ({
           </div>
         </div>
       </div>
-      <div className="landing-top__foot">
+      <div className="landing-top__foot" onClick={scrollToBottom}>
         <ArrowDownCircleFill size={32} color="white" />
       </div>
     </div>

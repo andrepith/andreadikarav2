@@ -72,7 +72,7 @@ Array [
         type="button"
       >
         <svg
-          fill="currentColor"
+          fill="white"
           height={24}
           viewBox="0 0 16 16"
           width={24}
@@ -121,11 +121,11 @@ Array [
     className="wrapper"
   >
     <div
-      className="d-flex align-items-center landing-top"
+      className="landing-top position-relative"
       id="landing-top"
     >
       <div
-        className="container"
+        className="container landing-top__text"
       >
         <div
           className="landing-block"
@@ -150,13 +150,13 @@ Array [
             className="d-flex mt-4"
           >
             <div
-              className="me-2"
+              className="me-2 mt-1"
             >
               <svg
-                fill="currentColor"
-                height={12}
+                fill="white"
+                height={16}
                 viewBox="0 0 16 16"
-                width={12}
+                width={16}
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -175,13 +175,13 @@ Array [
             className="d-flex mt-2"
           >
             <div
-              className="me-2"
+              className="me-2 mt-1"
             >
               <svg
-                fill="currentColor"
-                height={12}
+                fill="white"
+                height={16}
                 viewBox="0 0 16 16"
-                width={12}
+                width={16}
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -198,6 +198,22 @@ Array [
             </a>
           </div>
         </div>
+      </div>
+      <div
+        className="landing-top__foot"
+        onClick={[Function]}
+      >
+        <svg
+          fill="white"
+          height={32}
+          viewBox="0 0 16 16"
+          width={32}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+          />
+        </svg>
       </div>
     </div>
     <div

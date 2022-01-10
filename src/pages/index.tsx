@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import type { GetStaticProps } from "next";
 import bioApi from "../lib/BioApi";
 import NavBar from "../components/NavBar";
@@ -34,6 +35,13 @@ interface HomeProps {
 }
 
 const Home = ({ bio }: HomeProps) => {
+  const myRef = useRef<null | HTMLDivElement>(null);
+  const scrollToBottom = () => {
+    myRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <NavBar
@@ -50,8 +58,9 @@ const Home = ({ bio }: HomeProps) => {
           aboutMe={bio.aboutMe}
           email={bio.email}
           resumeLink={bio.resumeLink}
+          scrollToBottom={scrollToBottom}
         />
-        <Showcase portofolio={bio.portofolio} />
+        <Showcase portofolio={bio.portofolio} ref={myRef} />
         <Skillset skillset={bio.skillset} />
       </main>
     </>
