@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import Skillset from "../Skillset";
+import Skillset from "../../../components/Skillset";
 
 const skillset = [
   {

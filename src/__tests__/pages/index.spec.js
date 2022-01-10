@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import Home from "./index";
+import Home from "../../pages/index";
 
 const props = {
   bio: {

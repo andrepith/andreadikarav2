@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import Showcase from "../Showcase";
+import Showcase from "../../../components/Showcase";
 
 const portofolio = [
   {

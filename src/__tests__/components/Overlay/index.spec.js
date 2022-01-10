@@ -1,7 +1,7 @@
 import renderer from "react-test-renderer";
-import LandingTop from "../LandingTop";
+import Overlay from "../../../components/Overlay";
 
 it("Renders correctly", () => {
-  const tree = renderer.create(<LandingTop />).toJSON();
+  const tree = renderer.create(<Overlay />).toJSON();
   expect(tree).toMatchSnapshot();
 });
