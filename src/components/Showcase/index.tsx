@@ -45,4 +45,6 @@ const Showcase = React.forwardRef<HTMLDivElement, ShowcaseInterface>(
   }
 );
 
+Showcase.displayName = "Showcase";
+
 export default Showcase;
