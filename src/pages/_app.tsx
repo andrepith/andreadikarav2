@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Showcase | Resume of Andre Adikara</title>
+        <title>Andre Adikara | Front-End Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"

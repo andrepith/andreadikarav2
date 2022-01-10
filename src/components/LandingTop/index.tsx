@@ -32,7 +32,7 @@ const LandingTop = ({
           </h1>
           <p className="mt-4">{aboutMe}</p>
           <div className="d-flex mt-4">
-            <div className="me-2 mt-1">
+            <div className="me-2">
               <EnvelopeFill size={16} color="white" />
             </div>
             <a className="email-link" href={`mailto:${email}`}>
@@ -40,7 +40,7 @@ const LandingTop = ({
             </a>
           </div>
           <div className="d-flex mt-2">
-            <div className="me-2 mt-1">
+            <div className="me-2">
               <FileArrowDownFill size={16} color="white" />
             </div>
             <a
