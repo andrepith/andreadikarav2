@@ -28,6 +28,7 @@ const Showcase = React.forwardRef<HTMLDivElement, ShowcaseInterface>(
                     src={item.image}
                     alt={item.alt}
                     layout="fill"
+                    loading="eager"
                   />
                   <div className="image-overlay">
                     <div className="image-overlay-text">
