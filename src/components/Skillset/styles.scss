@@ -1,0 +1,54 @@
+.skillset {
+  margin-top: 48px;
+  padding-top: 48px;
+  background: $color-white;
+
+  @include for-tablet-portrait-down {
+    background: none;
+    margin: 24px;
+    padding-top: 0;
+  }
+}
+
+.logo-container {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+
+  @include for-tablet-portrait-down {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+
+.logo-wrapper span {
+  position: static !important;
+}
+
+.logo {
+  position: relative !important;
+  max-width: 100px !important;
+  max-height: unset !important;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.3s;
+  width: auto !important;
+  height: auto !important;
+
+  &:hover {
+    filter: none;
+  }
+
+  @include for-tablet-portrait-down {
+    filter: none;
+  }
+}

@@ -3,6 +3,7 @@ import type { GetStaticProps } from "next";
 import bioApi from "../lib/BioApi";
 import NavBar from "../components/NavBar";
 import LandingTop from "../components/LandingTop";
+import Experience from "@/components/Experience";
 import Showcase from "../components/Showcase";
 import Skillset from "../components/Skillset";
 
@@ -60,6 +61,7 @@ const Home = ({ bio }: HomeProps) => {
           resumeLink={bio.resumeLink}
           scrollToBottom={scrollToBottom}
         />
+        <Experience />
         <Showcase portofolio={bio.portofolio} ref={myRef} />
         <Skillset skillset={bio.skillset} />
       </main>
