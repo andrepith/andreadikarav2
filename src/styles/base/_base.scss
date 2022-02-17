@@ -12,14 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-a:hover,
-.nav-link:hover {
-  color: $color-white;
-}
-
-.section-title {
-  color: var(--dark);
-  text-decoration: overline;
-  text-decoration-color: $color-primary;
-}

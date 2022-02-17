@@ -1,7 +1,6 @@
 .skillset {
   margin-top: 48px;
   padding-top: 48px;
-  background: $color-white;
 
   @include for-tablet-portrait-down {
     background: none;
@@ -39,16 +38,8 @@
   max-width: 100px !important;
   max-height: unset !important;
   cursor: pointer;
-  filter: grayscale(100%);
   transition: 0.3s;
   width: auto !important;
   height: auto !important;
-
-  &:hover {
-    filter: none;
-  }
-
-  @include for-tablet-portrait-down {
-    filter: none;
-  }
+  filter: drop-shadow(0.5px 0.5px 0.5px $color-white);
 }

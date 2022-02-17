@@ -1,11 +1,4 @@
 .landing-top {
-  background: linear-gradient(
-    90deg,
-    $color-primary 0%,
-    $color-secondary 100%
-  );
-  background-size: 400% 400%;
-  animation: animateBg 10s ease infinite;
   height: 100vh;
   min-height: 500px;
   width: 100%;
