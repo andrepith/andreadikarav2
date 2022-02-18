@@ -4,6 +4,7 @@ import {
   FileArrowDownFill,
   ArrowDownCircleFill,
 } from "react-bootstrap-icons";
+import FadeInAnimation from "../../lib/Helpers/FadeInAnimation";
 
 interface LandingTopProps {
   firstName: string;
@@ -26,20 +27,31 @@ const LandingTop = ({
     <div className="landing-top position-relative" id="landing-top">
       <div className="container landing-top__text">
         <div className="landing-block">
-          <h1 className="landing-title">
+          <FadeInAnimation
+            wrapperElement="h1"
+            direction="up"
+            className="landing-title"
+          >
             Hey, I’m {firstName} - A Software <br />
             Engineer from {nationality}.
-          </h1>
-          <p className="mt-4">{aboutMe}</p>
-          <div className="d-flex mt-4">
+          </FadeInAnimation>
+          <FadeInAnimation
+            wrapperElement="p"
+            direction="up"
+            className="mt-4"
+            delay={0.5}
+          >
+            {aboutMe}
+          </FadeInAnimation>
+          <FadeInAnimation direction="up" delay={1} className="d-flex mt-4">
             <div className="me-2">
               <EnvelopeFill size={16} color="white" />
             </div>
             <a className="email-link" href={`mailto:${email}`}>
               {email}
             </a>
-          </div>
-          <div className="d-flex mt-2">
+          </FadeInAnimation>
+          <FadeInAnimation direction="up" delay={1.1} className="d-flex mt-2">
             <div className="me-2">
               <FileArrowDownFill size={16} color="white" />
             </div>
@@ -50,7 +62,7 @@ const LandingTop = ({
             >
               Download Resume
             </a>
-          </div>
+          </FadeInAnimation>
         </div>
       </div>
       <div className="landing-top__foot" onClick={scrollToBottom}>

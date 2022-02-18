@@ -10,18 +10,6 @@
     "foot";
 }
 
-@keyframes animateBg {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .landing-top__text {
   grid-area: body;
   align-self: center;
@@ -72,7 +60,7 @@
 .download-link,
 .landing-block p {
   font-weight: 500;
-  color: $color-white;
+  color: $color-grey;
   font-size: 20px;
 }
 
