@@ -10,7 +10,8 @@ declare const process: {
 const bioApi = async () => {
   try {
     const res = await axios.get(process.env.API_URL);
-    return res.data;
+    return staticData;
+    // return res.data;
   } catch (error) {
     return staticData;
   }

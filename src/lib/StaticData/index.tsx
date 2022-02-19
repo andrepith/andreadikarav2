@@ -19,6 +19,36 @@ const data = {
   linkedin: {
     url: "https://www.linkedin.com/in/andreadikara/",
   },
+  experience: [
+    {
+      title: "Frontend Developer",
+      company: "Spacestock",
+      location: "Jakarta, Indonesia",
+      from: "1547454600000",
+      to: "1616693400000",
+      current: false,
+      description: [
+        "Finishing SpaceStock's Web beta version with Laravel",
+        "Built and setup MVP web for SpaceStock 2.0 with React, Redux and Storybook",
+        "Built Inquiry Management System with React and Redux",
+        "Built Progressive Web Apps Customer Relationship Management (CRM) for Inquiry Management with React and Redux",
+        "Built Agent App with React Native",
+      ],
+      url: "https://spacestock.com/",
+    },
+    {
+      title: "Frontend Developer",
+      company: "Jenius",
+      location: "Jakarta, Indonesia",
+      from: "1619166600000",
+      to: "1633109400000",
+      current: false,
+      description: [
+        "Worked on Remittance Feature to send money to other countries",
+      ],
+      url: "https://www.jenius.com/",
+    },
+  ],
   portofolio: [
     {
       url: "https://spacestock.com/",

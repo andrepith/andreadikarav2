@@ -3,6 +3,7 @@ import type { GetStaticProps } from "next";
 import bioApi from "../lib/BioApi";
 import NavBar from "../components/NavBar";
 import LandingTop from "../components/LandingTop";
+import Experience from "@/components/Experience";
 import Showcase from "../components/Showcase";
 import Skillset from "../components/Skillset";
 
@@ -28,6 +29,7 @@ interface HomeProps {
     linkedin: {
       url: string;
     };
+    experience: Array<any>;
     resumeLink: string;
     portofolio: Array<any>;
     skillset: Array<any>;
@@ -60,7 +62,8 @@ const Home = ({ bio }: HomeProps) => {
           resumeLink={bio.resumeLink}
           scrollToBottom={scrollToBottom}
         />
-        <Showcase portofolio={bio.portofolio} ref={myRef} />
+        <Experience experience={bio.experience} ref={myRef} />
+        <Showcase portofolio={bio.portofolio} />
         <Skillset skillset={bio.skillset} />
       </main>
     </>

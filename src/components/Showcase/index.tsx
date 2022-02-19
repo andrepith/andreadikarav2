@@ -14,9 +14,9 @@ interface ShowcaseInterface {
 }
 
 const Showcase = React.forwardRef<HTMLDivElement, ShowcaseInterface>(
-  (props, ref) => {
+  (props) => {
     return (
-      <div className="justify-content-start showcase" id="showcase" ref={ref}>
+      <div className="justify-content-start showcase" id="showcase">
         <div className="container">
           <h2 className="section-title text-center">Showcase.</h2>
           <div className="row">
