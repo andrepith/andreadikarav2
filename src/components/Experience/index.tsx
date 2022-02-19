@@ -44,7 +44,10 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceInterface>(
                     <FadeInAnimation wrapperElement="span" direction="up">
                       <div className="timeline-card--head">
                         <h3 className="vertical-timeline-element-title">
-                          {item.title} @ <a href={item.url}>{item.company}</a>
+                          {item.title} @{" "}
+                          <a target="_blank" href={item.url}>
+                            {item.company}
+                          </a>
                         </h3>
                         <h4 className="vertical-timeline-element-subtitle">
                           {item.location}
