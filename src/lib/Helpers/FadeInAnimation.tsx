@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useMemo } from "react";
 import { gsap } from "gsap";
 
 interface FadeInAnimationInterface {
@@ -24,8 +24,9 @@ const FadeInAnimation = ({
 }: FadeInAnimationInterface) => {
   const Component = wrapperElement;
   let compRef = useRef(null);
-  const distance = 200;
-  let fadeDirection = {};
+  const distance = 100;
+  // @ts-ignore: Unreachable code error
+  let fadeDirection;
   switch (direction) {
     case "left":
       fadeDirection = { x: -distance };
@@ -44,6 +45,7 @@ const FadeInAnimation = ({
   }
   useEffect(() => {
     gsap.from(compRef.current, 1, {
+      // @ts-ignore: Unreachable code error
       ...fadeDirection,
       opacity: 0,
       delay,

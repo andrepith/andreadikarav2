@@ -45,7 +45,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceInterface>(
                       <div className="timeline-card--head">
                         <h3 className="vertical-timeline-element-title">
                           {item.title} @{" "}
-                          <a target="_blank" href={item.url}>
+                          <a target="__blank" href={item.url}>
                             {item.company}
                           </a>
                         </h3>
