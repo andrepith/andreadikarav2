@@ -58,7 +58,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceInterface>(
                           item.description.length > 1 ? (
                             <li key={index}>{desc}</li>
                           ) : (
-                            <p>{desc}</p>
+                            <p key={index}>{desc}</p>
                           )
                         )}
                       </div>
