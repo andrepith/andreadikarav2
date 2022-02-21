@@ -8,6 +8,7 @@ const data = {
   country: "Indonesia",
   nationality: "Indonesia",
   email: "andrepith@yahoo.co.uk",
+  phone: "+6282331578427",
   resumeLink:
     "https://drive.google.com/file/d/1EDhmqNfGvwMeKWScVN7w-hH3RUsXVSh-/view",
   jobTitle: ["Software Engineer", "Frontend Engineer"],
