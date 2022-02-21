@@ -4,7 +4,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { getRangeYear } from "../../lib/Helpers";
-import FadeInAnimation from "../../lib/Helpers/FadeInAnimation";
 
 interface ExperienceInterfaceItem {
   title: string;
@@ -33,7 +32,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceInterface>(
           <h2 className="section-title text-center">Experience.</h2>
           <section className="timeline">
             <div className="timeline-container">
-              <VerticalTimeline animate={true}>
+              <VerticalTimeline>
                 {props.experience.map((item, index) => (
                   <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -41,28 +40,26 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceInterface>(
                     iconClassName="timeline-icon"
                     key={index}
                   >
-                    <FadeInAnimation wrapperElement="span" direction="up">
-                      <div className="timeline-card--head">
-                        <h3 className="vertical-timeline-element-title">
-                          {item.title} @{" "}
-                          <a target="__blank" href={item.url}>
-                            {item.company}
-                          </a>
-                        </h3>
-                        <h4 className="vertical-timeline-element-subtitle">
-                          {item.location}
-                        </h4>
-                      </div>
-                      <div className="timeline-card--body">
-                        {item.description.map((desc, index) =>
-                          item.description.length > 1 ? (
-                            <li key={index}>{desc}</li>
-                          ) : (
-                            <p key={index}>{desc}</p>
-                          )
-                        )}
-                      </div>
-                    </FadeInAnimation>
+                    <div className="timeline-card--head">
+                      <h3 className="vertical-timeline-element-title">
+                        {item.title} @{" "}
+                        <a target="__blank" href={item.url}>
+                          {item.company}
+                        </a>
+                      </h3>
+                      <h4 className="vertical-timeline-element-subtitle">
+                        {item.location}
+                      </h4>
+                    </div>
+                    <div className="timeline-card--body">
+                      {item.description.map((desc, index) =>
+                        item.description.length > 1 ? (
+                          <li key={index}>{desc}</li>
+                        ) : (
+                          <p key={index}>{desc}</p>
+                        )
+                      )}
+                    </div>
                   </VerticalTimelineElement>
                 ))}
               </VerticalTimeline>

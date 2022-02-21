@@ -1,11 +1,12 @@
 import { useRef } from "react";
 import type { GetStaticProps } from "next";
+import dynamic from "next/dynamic";
 import bioApi from "../lib/BioApi";
 import NavBar from "../components/NavBar";
 import LandingTop from "../components/LandingTop";
-import Experience from "@/components/Experience";
-import Showcase from "../components/Showcase";
-import Skillset from "../components/Skillset";
+import Experience from "../components/Experience";
+const Showcase = dynamic(() => import("@/components/Showcase"));
+const Skillset = dynamic(() => import("@/components/Skillset"));
 
 export const getStaticProps: GetStaticProps = async () => {
   const bio = await bioApi();

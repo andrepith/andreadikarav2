@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import FadeInAnimation from "@/lib/Helpers/FadeInAnimation";
 
 interface PortofolioInterfaceItem {
   url: string;
@@ -21,14 +22,19 @@ const Showcase = React.forwardRef<HTMLDivElement, ShowcaseInterface>(
           <h2 className="section-title text-center">Showcase.</h2>
           <div className="row">
             {props.portofolio.map((item, key) => (
-              <div key={key} className="col-lg-6 col-sm-12 mt-3 showcase-cards">
+              <FadeInAnimation
+                wrapperElement="div"
+                direction={key % 2 ? "right" : "left"}
+                className="col-lg-6 col-sm-12 mt-3 showcase-cards"
+                delay={1 + key / 10}
+                key={key}
+              >
                 <a href={item.url} target="__blank" className="showcase-card">
                   <Image
                     className="showcase-image image"
                     src={item.image}
                     alt={item.alt}
                     layout="fill"
-                    loading="eager"
                   />
                   <div className="image-overlay">
                     <div className="image-overlay-text">
@@ -37,7 +43,7 @@ const Showcase = React.forwardRef<HTMLDivElement, ShowcaseInterface>(
                     </div>
                   </div>
                 </a>
-              </div>
+              </FadeInAnimation>
             ))}
           </div>
         </div>

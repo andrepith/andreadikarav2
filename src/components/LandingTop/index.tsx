@@ -4,7 +4,7 @@ import {
   FileArrowDownFill,
   ArrowDownCircleFill,
 } from "react-bootstrap-icons";
-import FadeInAnimation from "../../lib/Helpers/FadeInAnimation";
+import FadeInAnimation from "@/lib/Helpers/FadeInAnimation";
 
 interface LandingTopProps {
   firstName: string;
