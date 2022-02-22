@@ -22,7 +22,7 @@ interface ExperienceInterface {
 
 const Experience = (props: ExperienceInterface) => {
   return (
-    <div className="justify-content-start experience" id="experience">
+    <section className="justify-content-start experience" id="experience">
       <div className="container">
         <h2 className="section-title text-center">Experience.</h2>
         <section className="timeline">
@@ -61,7 +61,7 @@ const Experience = (props: ExperienceInterface) => {
           </div>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -24,7 +24,7 @@ const LandingTop = ({
   scrollToExperience,
 }: LandingTopProps) => {
   return (
-    <div className="landing-top position-relative" id="landing-top">
+    <section className="landing-top position-relative" id="landing-top">
       <div className="container landing-top__text">
         <div className="landing-block">
           <FadeInAnimation
@@ -68,7 +68,7 @@ const LandingTop = ({
       <div className="landing-top__foot" onClick={scrollToExperience}>
         <ArrowDownCircleFill size={32} color="white" />
       </div>
-    </div>
+    </section>
   );
 };
 

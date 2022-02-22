@@ -38,7 +38,7 @@ const NavBar = ({
         linkedin={linkedin}
         email={email}
       />
-      <div className="fixed-top navigation" id="navigation">
+      <header className="fixed-top navigation" id="navigation">
         <nav className="navbar navbar-expand-lg primary-nav container">
           <Link href="/">
             <a aria-current="page" className="nav-item nav-link pl-0 me-4">
@@ -81,7 +81,7 @@ const NavBar = ({
             </div>
           </div>
         </nav>
-      </div>
+      </header>
     </>
   );
 };

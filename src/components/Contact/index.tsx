@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="justify-content-start contact" id="contact">
+    <section className="justify-content-start contact" id="contact">
       <div className="container">
         <h2 className="section-title text-center">Get In Touch.</h2>
         <form className="contact-form" onSubmit={onSubmit}>
@@ -76,7 +76,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -16,7 +16,7 @@ const Overlay = ({
   email,
 }: OverlayInterface) => {
   return (
-    <div
+    <aside
       id="navOverlay"
       className={`nav-overlay ${isOpen ? "d-block" : "d-none"}`}
     >
@@ -32,7 +32,7 @@ const Overlay = ({
         </a>
         <a href={`mailto:${email}`}>email</a>
       </div>
-    </div>
+    </aside>
   );
 };
 
