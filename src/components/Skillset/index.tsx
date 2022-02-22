@@ -12,7 +12,7 @@ interface SkillsetInterface {
 
 const Skillset = ({ skillset }: SkillsetInterface) => {
   return (
-    <div className="justify-content-start skillset" id="skillset">
+    <div className="justify-content-start skillset" id="skills">
       <div className="container">
         <h2 className="section-title text-center">Featured Skillset.</h2>
         <div className="logo-container mt-4">

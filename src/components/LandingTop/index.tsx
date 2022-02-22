@@ -12,7 +12,7 @@ interface LandingTopProps {
   aboutMe: string;
   email: string;
   resumeLink: string;
-  scrollToBottom: () => void;
+  scrollToExperience: () => void;
 }
 
 const LandingTop = ({
@@ -21,7 +21,7 @@ const LandingTop = ({
   aboutMe,
   email,
   resumeLink,
-  scrollToBottom,
+  scrollToExperience,
 }: LandingTopProps) => {
   return (
     <div className="landing-top position-relative" id="landing-top">
@@ -65,7 +65,7 @@ const LandingTop = ({
           </FadeInAnimation>
         </div>
       </div>
-      <div className="landing-top__foot" onClick={scrollToBottom}>
+      <div className="landing-top__foot" onClick={scrollToExperience}>
         <ArrowDownCircleFill size={32} color="white" />
       </div>
     </div>

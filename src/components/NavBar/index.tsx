@@ -9,6 +9,10 @@ interface NavBarInterface {
   github: string;
   linkedin: string;
   email: string;
+  scrollToExperience: () => void;
+  scrollToProject: () => void;
+  scrollToSkills: () => void;
+  scrollToContact: () => void;
 }
 
 const NavBar = ({
@@ -17,6 +21,10 @@ const NavBar = ({
   github,
   linkedin,
   email,
+  scrollToExperience,
+  scrollToProject,
+  scrollToSkills,
+  scrollToContact,
 }: NavBarInterface) => {
   const [isOpen, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -33,7 +41,7 @@ const NavBar = ({
       <div className="fixed-top navigation" id="navigation">
         <nav className="navbar navbar-expand-lg primary-nav container">
           <Link href="/">
-            <a aria-current="page" className="nav-item nav-link pl-0 mr-4">
+            <a aria-current="page" className="nav-item nav-link pl-0 me-4">
               {firstName} {lastName}
             </a>
           </Link>
@@ -47,20 +55,21 @@ const NavBar = ({
           </button>
           <div className="collapse navbar-collapse" id="navbar">
             <div className="navbar-nav align-items-center ml-auto">
-              <a
-                className="nav-item nav-link mr-4"
-                href={github}
-                target="__blank"
+              <div
+                onClick={scrollToExperience}
+                className="nav-item nav-link me-2"
               >
-                github
-              </a>
-              <a
-                className="nav-item nav-link mr-4"
-                href={linkedin}
-                target="__blank"
-              >
-                linkedin
-              </a>
+                Experience
+              </div>
+              <div onClick={scrollToProject} className="nav-item nav-link me-2">
+                Project
+              </div>
+              <div onClick={scrollToSkills} className="nav-item nav-link me-2">
+                Skills
+              </div>
+              <div onClick={scrollToContact} className="nav-item nav-link me-2">
+                Contact
+              </div>
               <a
                 href={`mailto:${email}`}
                 className="btn btn-layered offset"

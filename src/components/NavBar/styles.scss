@@ -12,6 +12,20 @@
   box-shadow: none;
 }
 
+.navbar-nav {
+  .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover {
+      transform: translateY(-3px);
+      color: $color-highlight;
+    }
+  }
+}
+
 .nav-link {
   color: $color-white;
   font-weight: 700;
@@ -44,7 +58,6 @@
   color: $color-white;
   text-decoration: none;
 }
-
 
 .nav-overlay {
   height: 100%;

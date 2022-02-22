@@ -41,11 +41,18 @@ interface HomeProps {
 }
 
 const Home = ({ bio }: HomeProps) => {
-  const myRef = useRef<null | HTMLDivElement>(null);
-  const scrollToBottom = () => {
-    myRef.current?.scrollIntoView({
-      behavior: "smooth",
-    });
+  const scrollToExperience = () => {
+    window.location.replace("/#experience");
+  };
+  const scrollToProject = () => {
+    window.location.replace("/#project");
+  };
+  const scrollToSkills = () => {
+    window.location.replace("/#skills");
+  };
+
+  const scrollToContact = () => {
+    window.location.replace("/#contact");
   };
 
   return (
@@ -56,6 +63,10 @@ const Home = ({ bio }: HomeProps) => {
         github={bio.github.url}
         linkedin={bio.linkedin.url}
         email={bio.email}
+        scrollToExperience={scrollToExperience}
+        scrollToProject={scrollToProject}
+        scrollToSkills={scrollToSkills}
+        scrollToContact={scrollToContact}
       />
       <main className="wrapper">
         <LandingTop
@@ -64,9 +75,9 @@ const Home = ({ bio }: HomeProps) => {
           aboutMe={bio.aboutMe}
           email={bio.email}
           resumeLink={bio.resumeLink}
-          scrollToBottom={scrollToBottom}
+          scrollToExperience={scrollToExperience}
         />
-        <Experience experience={bio.experience} ref={myRef} />
+        <Experience experience={bio.experience} />
         <Showcase portofolio={bio.portofolio} />
         <Skillset skillset={bio.skillset} />
         <Contact />
