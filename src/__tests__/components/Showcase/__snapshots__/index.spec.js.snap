@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Renders correctly 1`] = `
-<div
+<section
   className="justify-content-start showcase"
-  id="showcase"
+  id="project"
 >
   <div
     className="container"
@@ -11,7 +11,7 @@ exports[`Renders correctly 1`] = `
     <h2
       className="section-title text-center"
     >
-      Showcase.
+      Project.
     </h2>
     <div
       className="row"
@@ -131,5 +131,5 @@ exports[`Renders correctly 1`] = `
       </div>
     </div>
   </div>
-</div>
+</section>
 `;

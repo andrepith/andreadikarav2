@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Renders correctly 1`] = `
-<div
+<aside
   className="nav-overlay d-none"
   id="navOverlay"
 >
@@ -26,21 +26,26 @@ exports[`Renders correctly 1`] = `
   <div
     className="overlay-content"
   >
-    <a
-      target="__blank"
+    <div
+      onClick={[Function]}
     >
-      github
-    </a>
-    <a
-      target="__blank"
+      Experience
+    </div>
+    <div
+      onClick={[Function]}
     >
-      linkedin
-    </a>
-    <a
-      href="mailto:undefined"
+      Project
+    </div>
+    <div
+      onClick={[Function]}
     >
-      email
-    </a>
+      Skills
+    </div>
+    <div
+      onClick={[Function]}
+    >
+      Contact
+    </div>
   </div>
-</div>
+</aside>
 `;

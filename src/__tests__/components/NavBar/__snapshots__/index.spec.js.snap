@@ -2,7 +2,7 @@
 
 exports[`Renders correctly 1`] = `
 Array [
-  <div
+  <aside
     className="nav-overlay d-none"
     id="navOverlay"
   >
@@ -28,24 +28,29 @@ Array [
     <div
       className="overlay-content"
     >
-      <a
-        target="__blank"
+      <div
+        onClick={[Function]}
       >
-        github
-      </a>
-      <a
-        target="__blank"
+        Experience
+      </div>
+      <div
+        onClick={[Function]}
       >
-        linkedin
-      </a>
-      <a
-        href="mailto:undefined"
+        Project
+      </div>
+      <div
+        onClick={[Function]}
       >
-        email
-      </a>
+        Skills
+      </div>
+      <div
+        onClick={[Function]}
+      >
+        Contact
+      </div>
     </div>
-  </div>,
-  <div
+  </aside>,
+  <header
     className="fixed-top navigation"
     id="navigation"
   >
@@ -54,7 +59,7 @@ Array [
     >
       <a
         aria-current="page"
-        className="nav-item nav-link pl-0 mr-4"
+        className="nav-item nav-link pl-0 me-4"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -87,18 +92,26 @@ Array [
         <div
           className="navbar-nav align-items-center ml-auto"
         >
-          <a
-            className="nav-item nav-link mr-4"
-            target="__blank"
+          <div
+            className="nav-item nav-link me-2"
           >
-            github
-          </a>
-          <a
-            className="nav-item nav-link mr-4"
-            target="__blank"
+            Experience
+          </div>
+          <div
+            className="nav-item nav-link me-2"
           >
-            linkedin
-          </a>
+            Project
+          </div>
+          <div
+            className="nav-item nav-link me-2"
+          >
+            Skills
+          </div>
+          <div
+            className="nav-item nav-link me-2"
+          >
+            Contact
+          </div>
           <a
             aria-pressed="true"
             className="btn btn-layered offset"
@@ -110,6 +123,6 @@ Array [
         </div>
       </div>
     </nav>
-  </div>,
+  </header>,
 ]
 `;

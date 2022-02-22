@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Renders correctly 1`] = `
-<div
+<section
   className="justify-content-start skillset"
-  id="skillset"
+  id="skills"
 >
   <div
     className="container"
@@ -59,7 +59,7 @@ exports[`Renders correctly 1`] = `
                 "maxWidth": "100%",
                 "minHeight": "100%",
                 "minWidth": "100%",
-                "objectFit": undefined,
+                "objectFit": "contain",
                 "objectPosition": undefined,
                 "padding": 0,
                 "position": "absolute",
@@ -92,7 +92,7 @@ exports[`Renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "contain",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -107,5 +107,5 @@ exports[`Renders correctly 1`] = `
       </div>
     </div>
   </div>
-</div>
+</section>
 `;
