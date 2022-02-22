@@ -34,9 +34,10 @@ const NavBar = ({
       <Overlay
         isOpen={isOpen}
         handleClose={handleClose}
-        github={github}
-        linkedin={linkedin}
-        email={email}
+        scrollToExperience={scrollToExperience}
+        scrollToProject={scrollToProject}
+        scrollToSkills={scrollToSkills}
+        scrollToContact={scrollToContact}
       />
       <header className="fixed-top navigation" id="navigation">
         <nav className="navbar navbar-expand-lg primary-nav container">

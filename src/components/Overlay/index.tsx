@@ -3,18 +3,36 @@ import { XCircle } from "react-bootstrap-icons";
 interface OverlayInterface {
   isOpen: boolean;
   handleClose: () => void;
-  github: string;
-  linkedin: string;
-  email: string;
+  scrollToExperience: () => void;
+  scrollToProject: () => void;
+  scrollToSkills: () => void;
+  scrollToContact: () => void;
 }
 
 const Overlay = ({
   isOpen,
   handleClose,
-  github,
-  linkedin,
-  email,
+  scrollToExperience,
+  scrollToProject,
+  scrollToSkills,
+  scrollToContact,
 }: OverlayInterface) => {
+  const scrollExp = () => {
+    scrollToExperience();
+    handleClose();
+  };
+  const scrollProj = () => {
+    scrollToProject();
+    handleClose();
+  };
+  const scrollSkills = () => {
+    scrollToSkills();
+    handleClose();
+  };
+  const scrollContact = () => {
+    scrollToContact();
+    handleClose();
+  };
   return (
     <aside
       id="navOverlay"
@@ -24,13 +42,10 @@ const Overlay = ({
         <XCircle onClick={handleClose} />
       </span>
       <div className="overlay-content">
-        <a href={github} target="__blank">
-          github
-        </a>
-        <a href={linkedin} target="__blank">
-          linkedin
-        </a>
-        <a href={`mailto:${email}`}>email</a>
+        <div onClick={scrollExp}>Experience</div>
+        <div onClick={scrollProj}>Project</div>
+        <div onClick={scrollSkills}>Skills</div>
+        <div onClick={scrollContact}>Contact</div>
       </div>
     </aside>
   );
