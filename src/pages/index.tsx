@@ -7,6 +7,7 @@ import LandingTop from "../components/LandingTop";
 import Experience from "../components/Experience";
 const Showcase = dynamic(() => import("@/components/Showcase"));
 const Skillset = dynamic(() => import("@/components/Skillset"));
+const Contact = dynamic(() => import("@/components/Contact"));
 const Footer = dynamic(() => import("@/components/Footer"));
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -68,6 +69,7 @@ const Home = ({ bio }: HomeProps) => {
         <Experience experience={bio.experience} ref={myRef} />
         <Showcase portofolio={bio.portofolio} />
         <Skillset skillset={bio.skillset} />
+        <Contact />
         <Footer email={bio.email} phone={bio.phone} />
       </main>
     </>
