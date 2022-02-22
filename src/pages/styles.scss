@@ -1,6 +1,9 @@
 a:hover,
-.nav-link:hover {
-  color: $color-white;
+.nav-link {
+  &:hover,
+  &:focus {
+    color: $color-white;
+  }
 }
 
 .section-title {

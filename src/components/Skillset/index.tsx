@@ -23,6 +23,7 @@ const Skillset = ({ skillset }: SkillsetInterface) => {
                 alt={item.name}
                 layout="fill"
                 className="logo"
+                objectFit="contain"
               />
             </div>
           ))}
