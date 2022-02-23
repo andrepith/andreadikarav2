@@ -9,8 +9,7 @@ const data = {
   nationality: "Indonesia",
   email: "andrepith@yahoo.co.uk",
   phone: "+6282331578427",
-  resumeLink:
-    "https://drive.google.com/file/d/1EDhmqNfGvwMeKWScVN7w-hH3RUsXVSh-/view",
+  resumeLink: "https://techrez.io/resume/andre-adikara",
   jobTitle: ["Software Engineer", "Frontend Engineer"],
   aboutMe:
     "Software Engineer based in Jakarta, Indonesia with passion to making complexed things simple for users. I love creating elegant and smart user-centered application which solve complex problems. I am also very passionate about simplicity and the psychology behind the design.",
