@@ -24,6 +24,7 @@ const Skillset = ({ skillset }: SkillsetInterface) => {
                 layout="fill"
                 className="logo"
                 objectFit="contain"
+                priority={true}
               />
             </div>
           ))}

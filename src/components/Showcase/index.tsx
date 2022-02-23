@@ -27,6 +27,7 @@ const Showcase = (props: ShowcaseInterface) => {
                   src={item.image}
                   alt={item.alt}
                   layout="fill"
+                  priority={true}
                 />
                 <div className="image-overlay">
                   <div className="image-overlay-text">
